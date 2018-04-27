@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 :root{
   --header-bg:#001C32;
-  --font-family:Segoe UI;
+  --font-family:'Montserrat', sans-serif;
 }
 body{
   font-family:var(--font-family);
