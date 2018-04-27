@@ -1,0 +1,160 @@
+:root{
+  --header-bg:#001C32;
+  --font-family:Segoe UI;
+}
+body{
+  font-family:var(--font-family);
+  margin:0;
+  padding:0;
+  background: #eee;
+}
+
+#showcase{
+  background: var(--header-bg);
+  color:#fff;
+}
+.intro{
+  position: relative;
+  top:50%;
+  padding:40px;
+}
+.intro a{
+  text-decoration: none;
+  color:#fff;
+}
+.intro h3{
+  position: relative;
+  padding-top:30px;
+  padding-bottom: 10px;
+}
+
+.intro nav ul{
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding-bottom: 10px;
+}
+.intro nav ul li{
+  width:10%;
+  padding:8px;
+  transition: 1s;
+}
+.intro nav ul li:hover{
+  background: #fff;
+}
+.intro li:hover a{
+  color: #000;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+#profile{
+  background: #fff;
+  margin:10px;
+  height: 480px;
+}
+#profile img{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-left:16px;
+}
+
+#profile .options{
+  list-style: none;
+}
+
+.options li{
+  margin-bottom: 10px;
+  padding:10px;
+  transition: 1s;
+}
+.options li:hover{
+  background:var(--header-bg);
+}
+.options li:hover a{
+  color:#fff;
+}
+.options a{
+  text-decoration: none;
+  color:#000;
+}
+#posts{
+  background: #fff;
+  margin:10px;
+}
+.collection{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding:18px;
+  border-bottom: 1px solid #ddd;
+}
+.collection li:nth-child(1){
+  width: 30%;
+}
+.status{
+  color:green;
+}
+.titles{
+  background: #ddd;
+  padding:10px;
+}
+
+
+.actions{
+  display: flex;
+  justify-content: space-around;
+
+  transform:translateX(20px);
+}
+
+.actions a{
+  text-decoration: none;
+  color:white;
+  background: var(--header-bg);
+  padding:10px 20px;
+  border: none;
+  margin-right:8px;
+  transition: 1s;
+
+}
+.actions a:hover{
+  color:var(--header-bg);
+  background: #bbb;
+}
+.btn{
+  text-decoration: none;
+  color:white;
+  background: var(--header-bg);
+  padding:10px 20px;
+  border: none;
+  margin-right:8px;
+  font-family: var(--font-family);
+  transition: 1s;
+}
+.btn:hover{
+  color:var(--header-bg);
+  background: #bbb;
+}
+.post-form{
+  padding:20px;
+  margin:10px;
+}
+
+.post-form input[type=text], .post-form label .post-form textarea{
+  display: block;
+  width: 60%;
+  padding:10px;
+  font-family: var(--font-family);
+}
+.post-form label{
+  padding-bottom:16px;
+}
+.post-form input[type=text], .post-form textarea{
+  border:1px solid var(--header-bg);
+  border-radius: 8px;
+}

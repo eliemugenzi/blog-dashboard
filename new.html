@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <section id="showcase">
+      <div class="intro">
+        <h3>Dashboard | Blog</h3>
+        <nav>
+          <ul>
+            <li><a href="index.html">All Posts</a></li>
+            <li><a href="published.html">Published</a></li>
+            <li><a href="draft.html">Draft</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <main>
+      <section id="profile">
+        <img src="./img/pm.jpg" alt="">
+        <h3 align="center">Elie Mugenzi</h3>
+        <ul class="options">
+          <li><a href="new.html">New Blog</a></li>
+          <li><a href="#">Edit Your Profile</a></li>
+          <li><a href="#">Sign Out</a></li>
+        </ul>
+      </section>
+      <section id="posts">
+
+       <form class="post-form" action="index.html" method="post">
+         <h3>New Blog Post</h3>
+         <label for="title">Title</label>
+         <input type="text" name="" value="" placeholder="Title goes here...">
+         <label for="description">Description</label><br>
+         <textarea name="name" rows="8" cols="80">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </textarea><br>
+         <input type="submit" class="btn" value="Publish">
+       </form>
+      </section>
+    </main>
+  </body>
+</html>
