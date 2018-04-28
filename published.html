@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Blog Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <section id="showcase">
       <div class="intro">
         <h3>Dashboard | Blog</h3>
         <nav>
-          <ul>
+          <a href="#" id="toggle"><i class="fa fa-bars fa-2x" style="color:#fff;"></i></a>
+          <ul id="nav-desktop">
             <li><a href="index.html">All Posts</a></li>
             <li><a href="published.html">Published</a></li>
             <li><a href="draft.html">Draft</a></li>
           </ul>
+          <ul id="nav-mobile">
+            <li><a href="index.html">All Posts</a></li>
+            <li><a href="published.html">Published</a></li>
+            <li><a href="draft.html">Draft</a></li>
+          </ul>
+
         </nav>
       </div>
     </section>
@@ -29,7 +39,7 @@
           <li><a href="#">Sign Out</a></li>
         </ul>
       </section>
-      <section id="posts">
+      <section id="posts" class="list-desktop">
         <ul class="collection titles">
           <li class="collection-item item-title">Title</li>
           <li class="collection-item item-title">Date</li>
@@ -83,6 +93,56 @@
             <a href="#" class="btn">Delete</a>
           </li>
         </ul>
+      </section>
+      <section class="list-mobile">
+        <div class="post-item">
+          <div class="post-details">
+            <strong>Title</strong>:Google IO Launch <br>
+            <strong>Date</strong>:12th June 2016 <br>
+            <strong>Status</strong>:Published <br>
+          </div>
+          <div class="post-action">
+
+            <a href="edit.html" class="btn-small">Edit</a><br><br>
+            <a href="#" class="btn-small">Delete</a>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="post-details">
+            <strong>Title</strong>:Firebase Cloud Messaging <br>
+            <strong>Date</strong>:1st Mar 2018 <br>
+            <strong>Status</strong>:Published <br>
+          </div>
+          <div class="post-action">
+
+            <a href="edit.html" class="btn-small">Edit</a><br><br>
+            <a href="#" class="btn-small">Delete</a>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="post-details">
+            <strong>Title</strong>:Introduction to WebRTC <br>
+            <strong>Date</strong>:12th Mar 2018 <br>
+            <strong>Status</strong>:Published <br>
+          </div>
+          <div class="post-action">
+
+            <a href="edit.html" class="btn-small">Edit</a><br><br>
+            <a href="#" class="btn-small">Delete</a>
+          </div>
+        </div>
+        <div class="post-item">
+          <div class="post-details">
+            <strong>Title</strong>:Ruby On Rails Developer Crash Course <br>
+            <strong>Date</strong>:14th July 2017 <br>
+            <strong>Status</strong>:Published <br>
+          </div>
+          <div class="post-action">
+
+            <a href="edit.html" class="btn-small">Edit</a><br><br>
+            <a href="#" class="btn-small">Delete</a>
+          </div>
+        </div>
       </section>
     </main>
   </body>

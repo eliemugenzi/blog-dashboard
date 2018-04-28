@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Blog Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
   </head>
   <body>
     <section id="showcase">
       <div class="intro">
         <h3>Dashboard | Blog</h3>
         <nav>
-          <ul>
+          <a href="#" id="toggle"><i class="fa fa-bars fa-2x" style="color:#fff;"></i></a>
+          <ul id="nav-desktop">
             <li><a href="index.html">All Posts</a></li>
             <li><a href="published.html">Published</a></li>
             <li><a href="draft.html">Draft</a></li>
           </ul>
+          <ul id="nav-mobile">
+            <li><a href="index.html">All Posts</a></li>
+            <li><a href="published.html">Published</a></li>
+            <li><a href="draft.html">Draft</a></li>
+          </ul>
+
         </nav>
       </div>
     </section>

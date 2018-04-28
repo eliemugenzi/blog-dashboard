@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root{
   --header-bg:#001C32;
-  --font-family:'Montserrat', sans-serif;
+  --font-family:'Open Sans', sans-serif;
 }
 body{
   font-family:var(--font-family);
@@ -29,24 +29,26 @@ body{
   padding-top:30px;
   padding-bottom: 10px;
 }
-
-.intro nav ul{
+.intro nav #toggle{
+  float: right;
+  transform: translateY(-50px);
+}
+.intro nav ul#nav-desktop{
   position: relative;
   display: flex;
   list-style: none;
   padding-bottom: 10px;
 }
-.intro nav ul li{
+.intro #nav-desktop  li{
   width:10%;
   padding:8px;
   transition: 1s;
 }
-.intro nav ul li:hover{
-  background: #fff;
+#nav-mobile{
+  display: none;
 }
-.intro li:hover a{
-  color: #000;
-}
+
+
 main{
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -159,4 +161,76 @@ main{
 .post-form input[type=text], .post-form textarea{
   border:1px solid var(--header-bg);
   border-radius: 8px;
+}
+#toggle{
+  visibility: hidden;
+}
+.list-mobile{
+  display: none;
+}
+
+.post-item{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #fff;
+  padding:20px;
+  margin-bottom: 7px;
+}
+.post-action{
+  display: block;
+  margin-bottom: 8px;
+}
+.post-action .btn-small{
+  padding:5px 20px;
+
+  background: var(--header-bg);
+  text-decoration: none;
+  color:#fff;
+  position: relative;
+}
+@media(max-width:750px){
+ nav  #nav-desktop{
+    display: none;
+    visibility: hidden;
+  }
+  .list-desktop{
+    display: none;
+
+  }
+  .list-mobile{
+    display: block;
+  }
+  .intro #nav-mobile li{
+    padding:20px;
+    transition: 1s;
+  }
+  .intro #nav-mobile li:hover{
+    transform:scale(1.3);
+    background: var(--header-bg);
+  }
+  .intro #nav-mobile li:hover a{
+    color:#fff;
+  }
+  #toggle{
+    visibility: visible;
+    position: relative;
+    transform: translateY(-200px);
+  }
+
+  #nav-mobile{
+    display: block;
+    list-style: none;
+    transform: translateY(-80px);
+  }
+  main{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .post-form{
+    margin:0 auto;
+  }
+  .post-form label,.post-form textarea,.post-form input[type=text]{
+    display: block;
+    position: relative;width: 90%;
+  }
 }
