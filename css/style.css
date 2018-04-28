@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 :root{
   --header-bg:#001C32;
-  --font-family:'Open Sans', sans-serif;
+  --font-family:'Montserrat', sans-serif;
 }
 body{
   font-family:var(--font-family);
